@@ -16,6 +16,7 @@
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     text-align: center;
+    z-index: 1;
 
 
 }
@@ -93,4 +94,83 @@ header {
 .cover-profile {
     object-fit: cover;
     overflow: hidden;
+}
+
+
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Varela', sans-serif;
+*/
+
+
+/* Ipad Scree */
+
+.right-header {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Mobile */
+
+
+@media only screen and (max-width: 390px) {
+
+    .construction {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .left-header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .title-portfolio {
+        top: 10%;
+        font-size: 5vw;
+    }
+
+    .firstandlast{
+        top: 20%;
+        font-size: 7vw;
+    }
+
+    .title-and-email {
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        bottom: 5%;
+    }
+
+    .job-title {
+        margin: auto;
+    }
+
+    .emailMe {
+        position: relative;
+        margin: auto;
+    }
+
+    .right-header {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .cover-profile {
+        bottom: 25%;
+        position: absolute;
+        max-width: 100%;
+    }
+
+
 }
