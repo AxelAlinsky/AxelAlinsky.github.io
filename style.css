@@ -99,6 +99,39 @@
 
 }
 
+.AboutMePhoto > img {
+    position: relative;
+    bottom: 30%;
+}
+
+/* About Me Section */
+.aboutMe_section{
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutMe_div {
+    height: 100%;
+    flex: 2;
+    color: white;
+    padding: 100px;
+    font-family: 'Varela', sans-serif;
+    font-size: 23px;
+}
+
+.aboutMe_div > p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.AboutMePhoto {
+    flex: 1;
+}
+
 .myListProjects {
     height: 100vh;
     background-color: #F6F6F6;
