@@ -60,7 +60,7 @@
 .title-and-email {
     display: flex;
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -89,8 +89,6 @@
     width: 50%;
     height: 100%;
     overflow: hidden;
-    border-radius: 0px 0px 20px 20px;
-
 }
 
 .cover-profile {
@@ -102,12 +100,26 @@
 .AboutMePhoto > img {
     position: relative;
     bottom: 30%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.AboutMePhoto > img:hover {
+    transform: scale(1.2);
 }
 
 /* About Me Section */
+
+.titleProject {
+    text-align: center;
+    font-family: 'Varela', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 .aboutMe_section{
     height: 50vh;
-    background-color: black;
+    background-color: #3C3C3B;
     display: flex;
     flex-direction: row;
 }
@@ -130,6 +142,7 @@
 
 .AboutMePhoto {
     flex: 1;
+    overflow: hidden;
 }
 
 .myListProjects {
@@ -153,11 +166,12 @@
     width: 320px;
     border-radius: 20px;
     cursor: pointer;
+    overflow: hidden;
 
 }
 
-.project_one {
-
+.project_one > img {
+    width: 100%;
 }
 
 
@@ -269,7 +283,7 @@ font-family: 'Varela', sans-serif;
     padding: 5px;
     width: 30px;
     cursor: pointer;
-    background-color: #FBAB7E;
+    background-color: #3C3C3B;
     border: none;
     font-size: 15px;
     outline: none;
@@ -278,12 +292,24 @@ font-family: 'Varela', sans-serif;
 }
 
 .inputContainer button:hover {
-    background-color: #f59b68;
+    background-color: #5f5f5f;
 }
-/* Input Container */
+
+.noteContainer {
+    background-color: #DCDBDB;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
 
 
-/* To Do Container */
+.note {
+    font-size: 20px;
+}
+
 .toDoContainer {
     width: 400px;
     height: 700px;
@@ -315,7 +341,7 @@ font-family: 'Varela', sans-serif;
 }
 
 .toDoContainer span {
-    background-color: #FBAB7E;
+    background-color: #3C3C3B;
     width: 30px;
     display: flex;
     justify-content: center;
@@ -326,7 +352,7 @@ font-family: 'Varela', sans-serif;
 }
 
 .toDoContainer span:hover {
-    background-color: #f59b68;
+    background-color: #5f5f5f;
 }
 /* To Do Container */
 
