@@ -240,7 +240,7 @@ body {
 }
 
 .header.nav-active {
-  height: 335px;
+  height: 370px;
   transition-duration: 0.35s;
 }
 
@@ -306,7 +306,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/city.webp");
+  background-image: url("../images/city-view.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -347,7 +347,9 @@ body {
   margin-block-end: 8px;
 }
 
-.hero-text { margin-block-end: 25px; }
+.hero-text { 
+  margin-block-end: 25px; 
+}
 
 .btn-group {
   display: flex;
@@ -882,11 +884,14 @@ textarea.contact-input {
   .hero-title {
     --fs-5: 2.2rem;
     margin-block-end: 25px;
+    text-shadow: 2px 2px 2px #CE5937;
+
   }
 
   .hero-text {
     margin-block-end: 25px;
     font-size: var(--fs-5);
+    text-shadow: 2px 2px 2px #CE5937;
   }
 
   .hero-banner {
@@ -907,6 +912,7 @@ textarea.contact-input {
     background-color: var(--white);
     border-radius: var(--radius-10);
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .elem-1 {
